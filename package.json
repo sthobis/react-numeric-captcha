@@ -1,0 +1,36 @@
+{
+  "name": "react-numeric-captcha",
+  "version": "1.0.0",
+  "description": "numeric captcha react component",
+  "repository": "https://github.com/sthobis/react-numeric-captcha",
+  "author": "S Thobi Sinaga <s.thobi.sinaga@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "main": "dist/captcha.js",
+  "umd:main": "dist/captcha.umd.js",
+  "module": "dist/captcha.mjs",
+  "source": "src/captcha.js",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch",
+    "test": "jest"
+  },
+  "peerDependencies": {
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.6.0",
+    "jest": "^23.6.0",
+    "microbundle": "^0.8.3",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-testing-library": "^5.3.2"
+  },
+  "dependencies": {}
+}
