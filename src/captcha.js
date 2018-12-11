@@ -60,17 +60,14 @@ class Captcha extends Component {
   };
 
   handleChange = e => {
-    const { onSuccess, onFailure } = this.props;
+    const { onChange } = this.props;
     const { solution } = this.state;
     this.setState({ input: e.target.value });
-    if (e.target.value === solution.toString()) {
-      onSuccess();
-    } else {
-      onFailure();
-    }
+    onChange(e.target.value === solution.toString());
   };
 
   render() {
+    const { placeholder } = this.props;
     const { input } = this.state;
     return (
       <div className="rnc">
@@ -123,7 +120,7 @@ class Captcha extends Component {
           type="number"
           value={input}
           onChange={this.handleChange}
-          placeholder="Insert captcha"
+          placeholder={placeholder}
           className="rnc-input"
           data-testid="captcha-input"
         />
@@ -132,9 +129,12 @@ class Captcha extends Component {
   }
 }
 
+Captcha.defaultProps = {
+  placeholder: "Insert captcha"
+};
+
 Captcha.propTypes = {
-  onSuccess: PropTypes.func.isRequired,
-  onFailure: PropTypes.func.isRequired,
+  onChange: PropTypes.func.isRequired,
   placeholder: PropTypes.string
 };
 
