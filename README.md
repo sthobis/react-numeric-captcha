@@ -12,6 +12,8 @@ Note that in most cases you should consider [Google Recaptcha](https://www.googl
 
 ## Usage
 
+[codesandbox](https://codesandbox.io/s/mzqzv33pq8)
+
 ```
 npm install react-numeric-captcha
 ```

@@ -3,13 +3,20 @@
   "version": "1.0.1",
   "description": "numeric captcha react component",
   "repository": "https://github.com/sthobis/react-numeric-captcha",
+  "homepage": "https://github.com/sthobis/react-numeric-captcha#readme",
   "author": "S Thobi Sinaga <s.thobi.sinaga@gmail.com>",
   "license": "MIT",
   "private": false,
   "main": "dist/captcha.js",
   "umd:main": "dist/captcha.umd.js",
-  "module": "dist/captcha.mjs",
   "source": "src/captcha.js",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "react",
+    "captcha"
+  ],
   "scripts": {
     "build": "microbundle --jsx=React.createElement",
     "dev": "microbundle watch --jsx=React.createElement",
